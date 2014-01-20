@@ -4,6 +4,11 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
+            options: {
+                mangle: true,
+                compress: true,
+                except: ['jQuery']
+            },
             my_target: {
                 files: {
                     '<%= pkg.name %>.min.js': ['<%= pkg.name %>.js']
@@ -23,6 +28,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-bookmarklet-thingy');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
-    grunt.registerTask('default', ['bookmarklet']);
+    grunt.registerTask('default', ['uglify', 'bookmarklet']);
 };
