@@ -34,7 +34,7 @@ All saved data is stored in the browser. What this means is:
 
 A bookmarklet is a browser bookmark which contains JavaScript instead of a URL. When the bookmark is clicked in runs the script instead of taking you to a website. You might have one bookmark to take you to socialTime and another beside it to load this bookmarklet.
 
-To install this bookmarklet simply create a new bookmark. Name it and in the URL field instead of a URL paste the code found here. Save and you're done. To run the bookmarklet just click it. The copy/paste buttons should appear at the top left of your screen.
+To install this bookmarklet simply create a new bookmark. Name it and in the URL field instead of a URL paste the code found in socialTime.copyPaste.bookmarklet.js (https://github.com/johnrobertallan/socialTime/blob/master/copyPaste/socialTime.copyPaste.bookmarklet.js). Save and you're done. To run the bookmarklet just click it. The copy/paste buttons should appear at the top left of your screen.
 
 **Note:** I tried to create a new bookmark from scratch in IE10. I found you had to bookmark a page and then edit the bookmark. So bookmark any page, right click on it, click Properties, update the name in the General Tab and paste the bookmarklet script into the URL field on the Web Document tab.
 
